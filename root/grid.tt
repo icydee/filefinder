@@ -1,0 +1,55 @@
+[%#
+#
+# $HeadURL: svn+ssh://dev.horivert.com/var/svn/payex/vertex/trunk/root/grid.tt $
+# $LastChangedRevision: 952 $
+# $LastChangedDate: 2006-12-04 09:11:52 +0000 (Mon, 04 Dec 2006) $
+# $LastChangedBy: icydee $
+#%]
+<TABLE WIDTH=100% BORDER=0 CELLPADDING=5 CELLSPACING=0>
+  <TR>
+    <TD bgcolor="#b4b4b4">
+      Page
+[% IF ps.previous_set %]
+      <a href="[% c.request.base %][% path %]?sess_[% id %]_page=1"><img src="/static/images/page_first.gif" width ="14" height="11" border="0"></a>
+[% END %]
+[% IF ps.previous_page %]
+      <a href="[% c.request.base %][% path %]?sess_[% id %]_page=[% ps.previous_page %]"><img src="/static/images/page_left.gif" width ="11" height="11" border="0"></a>
+[% END %]
+
+[% FOREACH page = ps.pages_in_set %]
+  [% IF page == ps.current_page %]
+  <strong>[% page %]</strong>
+  [% ELSE %]
+  <a href="[% c.request.base %][% path %]?sess_[% id %]_page=[% page %]">[% page %]</a>
+  [% END %]
+[% END %]
+
+[% IF ps.next_page %]
+      <a href="[% c.request.base %][% path %]?sess_[% id %]_page=[% ps.next_page %]"><img src="/static/images/page_next.gif" width ="11" height="11" border="0"></a>
+  [% IF ps.next_set >= ps.next_page %]
+      <a href="[% c.request.base %][% path %]?sess_[% id %]_page=[% ps.next_set %]"><img src="/static/images/page_last.gif" width ="14" height="11" border="0"></a>
+  [% END %]
+[% END %]
+      - Total Records [% ps.total_entries %]
+    </TD>
+  </TR>
+</TABLE>
+
+<table border="0" class="collegetable">
+  <tr>
+
+[% FOREACH col = cols %]
+  [% IF col.sort %]
+    <td>
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr><td ><a href="[% c.request.base %][% path %]?sess_[% id %]_sortCol=[% col.name %]&sess_[% id %]_sortDir=asc&sess_[% id %]_page=1"><img src="/static/images/page_up.gif" width="7" height="9" alt="Sort Ascending" border="0"></a></td><th rowspan="2" nowrap valign="middle"><b>&nbsp;[% col.title %]</b></th></tr>
+        <tr><td><a href="[% c.request.base %][% path %]?sess_[% id %]_sortCol=[% col.name %]&sess_[% id %]_sortDir=desc&sess_[% id %]_page=1"><img src="/static/images/page_down.gif" width="7" height="9" alt="Sort Descending" border="0"></a></td></tr>
+      </table>
+    </td>
+  [% ELSE %]
+    <th>[% col.title %]</th>
+  [% END %]
+[% END %]
+  </tr>
+[% content %]
+</table>

@@ -1,0 +1,141 @@
+body {
+   
+}
+
+div.left-col {
+				position: absolute;
+				top: 3em;
+				left: 2px;
+				width: 180px;
+				
+}
+
+div.left-col div.links{
+				margin-top: 50px;
+				
+}
+
+
+div.header
+{
+	background-image: url(/static/images/ox-sky.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-color: #000078 ;
+		background-color: #000066 ;
+	  border-bottom: 1px solid #999;
+	   border-top: 1px solid #999;
+}
+
+div.header h1 {
+ margin:0px;
+margin-top: 48px;
+background: #eee;
+ border-top: 1px solid #999;
+color: #333;
+font-weight: normal;
+letter-spacing: 0.2em;
+padding-left: 200px;
+padding-right: 10px;
+}
+
+
+img#crest {
+
+position: absolute;
+top:0px;
+left: 0px;
+padding: 0px 0px 0px 0px;
+border: none;
+}
+
+div.left-col h2{
+				display:none;
+				
+}
+
+
+/*  give content and footer divs  a left margin that leaves room for the absolute positined left col div (i.e. a few more pixels than the wicth value of div.left-col's width attribute) */
+div.content, div.footer {
+				
+				margin-left: 200px;
+				
+}
+
+div.left-col ul  {
+				text-align: left;
+				margin: 0px;
+				display: block;
+				padding: 0px;
+				
+}
+div.left-col ul li {
+				width: 100%; /* theoretically redundant, but IE seems to need it... */
+				list-style: none;
+				margin: 0px;
+				display: block;
+		
+		
+}
+
+div.left-col ul li a,  span.select {
+				background-color:  #eee;
+				display: block;
+				text-decoration: none;
+				padding: 0.2em;
+				padding-left: 0.5em;
+				border-bottom: 1px solid white;
+		
+		
+}
+
+div.left-col ul li a:hover, span.select {
+				background-color:  #999;
+				color: #fff;
+		
+		
+}
+
+
+
+div.left-col h3 {
+font-size: 0.8em;
+margin: 0px;
+
+}
+
+form input
+{
+border: 1px solid  #999;
+}
+
+p.error
+{
+  font-weight: bold;
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+  padding: 2px;
+}
+
+p.warning
+{
+  font-weight: bold;
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: yellow;
+  padding: 2px;
+}
+
+p.info
+{
+  font-weight: bold;
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: green;
+  padding: 2px;
+}
+

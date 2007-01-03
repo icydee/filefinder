@@ -1,0 +1,28 @@
+[%#
+#
+# $HeadURL: svn+ssh://dev.horivert.com/var/svn/payex/vertex/trunk/root/footer.tt $
+# $LastChangedRevision: 989 $
+# $LastChangedDate: 2006-12-22 15:58:51 +0000 (Fri, 22 Dec 2006) $
+# $LastChangedBy: gsultan $
+#%]
+
+[% INCLUDE debug.tt %]
+</div>
+
+<div class="left-col">
+  <div class="links">
+    <h2>Links</h2>
+
+    <h3>Functions</h3>
+    <ul class="linklist" id="mainnav" >
+      <li><a href="[% c.request.base %]folder/list">Folders</a></li>
+    </ul>
+
+  </div>
+</div>
+<div class="footer">
+
+<p class="copyright">&copy; 2007 IcyDee Ltd.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+ font-size: 0.8em;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+margin: 0px;
+ background-color: white;
+
+}
+
+div.left-col
+{
+display: block;
+}
+
+div.content
+{
+padding: 1em;
+}
+
+h1 {
+text-align: center;
+ font-size: 1.2em;
+ color: white;
+ background-color: #006;
+ padding: 0.2em;
+	
+}
+
+h2 {
+ font-size: 1.1em;
+}
+
+div.content h2 {
+text-align: center;
+}
+
+h3 {
+ font-size: 1em;
+}
+
+div.left-col h3 {
+ color: white;
+ background-color: #006;
+ padding: 0.2em;
+}
+
+h4 {
+
+}
+
+div.footer {
+text-align: center;
+font-size: 0.8em;
+padding: 1em;
+color: #999;
+}
+
+div.footer a{
+color: #336;
+text-decoration: none;
+}
+
+div.footer a:hover{
+color: #336;
+text-decoration: underline;
+}
+
+div.footer a img{
+border: none;
+padding: 1em;
+}
+
+
+form label
+{
+font-weight: bold;
+}
+
+
+form div.formfield
+{
+padding: 0.4em;
+}
+
+
+
+form label, span.grouplabel
+{
+font-weight: bold;
+padding: 1em;
+}
+
+form fieldset
+{
+border:none;
+}
+
+
+form fieldset div.formfield
+{
+border:none;
+text-align: right;
+width: 24em;
+
+}

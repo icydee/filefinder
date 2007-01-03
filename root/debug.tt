@@ -1,0 +1,77 @@
+[%#
+#
+# $HeadURL: svn+ssh://dev.horivert.com/var/svn/payex/vertex/trunk/root/debug.tt $
+# $LastChangedRevision: 952 $
+# $LastChangedDate: 2006-12-04 09:11:52 +0000 (Mon, 04 Dec 2006) $
+# $LastChangedBy: icydee $
+#%]
+
+
+<h2>Diagnostics.</h2>
+To turn diagnostics <strong>off</strong> reset the CGI parameter <strong>sess_debugon=</strong><p/>
+
+<h2>Debug Info.</h2>
+<pre>
+[% debug %]
+
+# test for localisation
+
+[% c.loc('Hello Catalyst') %]
+[% c.loc('Hello [_1]', 'Catalyst') %]
+[% c.loc('Your name is [_1] lalala[_2]', [icd, 'foo']) %]
+
+[% c.testme() %]
+
+displang = [% displang %]
+
+[% FOR db IN debugArray %][% db %]
+[% END %]
+</pre>
+
+<h2>CGI params</h2>
+<pre>
+[% PERL %]
+    foreach my $ttParm (sort {$a cmp $b} keys %{$stash->{c}->request->params()}) {
+        print "$ttParm = [".$stash->{c}->request->param($ttParm)."]\n";
+    }
+[% END %]
+</pre>
+
+<h2>ENV variables</h2>
+<pre>
+[% PERL %]
+    for my $env (sort {$a cmp $b} keys %ENV) {
+        print "$env = [".$ENV{$env}."]\n";
+    }
+[% END %]
+</pre>
+
+<h2>Session variables</h2>
+<pre>
+[% PERL %]
+use Data::Dumper;
+
+print Dumper($stash->{c}->session);
+[% END %]
+
+</pre>
+<h2>Flash</h2>
+<pre>
+[% PERL %]
+use Data::Dumper;
+
+print Dumper($stash->{c}->flash);
+
+[% END %]
+</pre>
+</pre>
+<h2>Stash</h2>
+<pre>
+[% PERL %]
+use Data::Dumper;
+
+print Dumper($stash);
+
+[% END %]
+</pre>
+

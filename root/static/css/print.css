@@ -1,0 +1,25 @@
+body {
+		font-size: 10pt;
+		font-family: Georgia, Times New Roman, Times, serif;
+}
+
+
+div.left-col {
+				display: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1
+{
+ color: black;
+ background-color: white;
+}
+div.left-col h3 {
+ color: black;
+ background-color: white;
+
+}

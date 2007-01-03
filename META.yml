@@ -1,0 +1,16 @@
+abstract: ~
+distribution_type: module
+generated_by: Module::Install version 0.64
+license: unknown
+name: Horivert-Vertex02
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  Catalyst: 5.7003
+  Catalyst::Action::RenderView: 0
+  Catalyst::Plugin::ConfigLoader: 0
+  Catalyst::Plugin::Static::Simple: 0
+  YAML: 0
+version: 0.01

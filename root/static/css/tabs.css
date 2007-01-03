@@ -1,0 +1,51 @@
+H1 { 
+  color: #006699; 
+  font-size: 11pt; 
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-weight: bold; 
+  margin-top:0; 
+  margin-bottom: 0; 
+  padding-top:0; 
+  padding-bottom:0; 
+}
+.content {
+  font-size: 11px; 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.tab_selected { 
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 10px; 
+  font-weight: bold; 
+}
+.tab_link {
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 10px; 
+  font-weight: bold; 
+  color: #006699; 
+}
+.small {
+  font-size: 10px; 
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+a:link { 
+  color: #006699; text-decoration: none; 
+}
+a:visited { 
+  text-decoration: none; color: #006699; 
+}
+a:hover { 
+  text-decoration: none; color: #FB7D02; 
+}
+a:active {
+  text-decoration: none; color: #006699;
+}
+.displayStatus {
+  color : red;
+  font-size: 14px;
+  font-weight: bold;
+}
+.error {
+  color : red;
+  font-size: 10px;
+  font-weight: bold;
+}

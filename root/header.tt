@@ -1,0 +1,34 @@
+[%#
+#
+# $HeadURL: svn+ssh://dev.horivert.com/var/svn/payex/vertex/trunk/root/header.tt $
+# $LastChangedRevision: 952 $
+# $LastChangedDate: 2006-12-04 09:11:52 +0000 (Mon, 04 Dec 2006) $
+# $LastChangedBy: icydee $
+#%]
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<!-- print stylesheet, formats pages when printing (hides navigation, switches font to serif, etc...) -->
+<link rel="stylesheet" type="text/css" media="print" href="[% c.request.base %]static/css/print.css"  />
+
+<!-- management stylesheet, formats gridmonger tables -->
+<link rel="stylesheet" type="text/css" media="screen" href="[% c.request.base %]static/css/safe.css"  />
+
+<!-- management stylesheet, formats tabs -->
+<link rel="stylesheet" type="text/css" media="screen" href="[% c.request.base %]static/css/tabs.css"  />
+
+<!-- basic stylesheet, (suitable for old browsers, NS4, etc.)  -->
+<link rel="stylesheet" type="text/css" media="screen" href="[% c.request.base %]static/css/basic.css"  />
+
+<!-- css layout stylesheet, import command not recognised bt NS4 (which won't support the more advanced CSS layout styling) -->
+<style type="text/css" media="screen">@import url([% c.request.base %]static/css/screen.css);</style>
+
+<title>Horivert Business Solutions Sprint Management</title>
+</head>
+<body>
+<div class="header" >
+  <h1>Horivert Business Solutions Sprint Management</h1>
+</div>
+<div class="content">
+

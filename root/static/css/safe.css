@@ -1,0 +1,1190 @@
+/*
+
+Safe style sheet for University of Oxford top level pages
+Created by Tom James, 10 July 2001 for University of Oxford Admin pages
+Adapted by Philippa Vereker for University of Oxford top level redesign January 2002
+Further adapted by Philippa Vereker to include accessibility measures April 2004
+Last modified by Philippa Vereker 29 December 2004
+This style sheet is readable by CSS-P and non CSS-P compliant browsers
+
+*/
+
+body
+	{
+	color: #000000;
+	background-color: '#ffffff';
+	padding: 0;
+	margin: 5;	
+}
+
+pre {
+ background: #f7f7f7;
+ border: 1px solid #d7d7d7;
+ margin: 1em 1.75em;
+ padding: .25em;
+ overflow: auto;
+}
+
+h1
+	{
+	font-size: 18pt;
+	/*/*/ 
+	font-size: 200%;
+	/* End */
+	font-family: arial, helvetica, sans-serif;
+	color: #000066;
+	padding: 0px;
+	font-weight: normal;}
+
+h2
+	{font-size: 16pt;
+	/*/*/
+	font-size: 160%;
+	/* End */
+	font-family: arial, helvetica, sans-serif;
+	color: #000066;
+	font-weight: normal;}
+
+h3
+	{font-size: 14pt;
+	/*/*/
+	font-size: 115%;
+	/* End */
+	font-family: verdana, helvetica, sans-serif;
+	color: #000066;
+	padding-bottom: 0px;
+	padding-top: 12px;
+	margin: 0 0 0 0;}
+
+h4
+	{font-size: 12pt;
+	/*/*/
+	font-size: 130%;
+	/* End */
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: #000066;}
+	
+h5
+	{font-size: 10pt;
+	/*/*/
+	font-size: 120%;
+	/* End */
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: #000066;}
+	
+h6
+	{font-size: 9pt;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: #000066;}
+
+p, ul, ol, dl, li, dt, dd, blockquote, caption, th, td, #localnav, #footernav, #footer, #rhinfo, .abullet, .bbullet, .downbullet, .shadedbox, .shadedboxbullet, .wordbullet, .sitename
+	{font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 10pt;}
+
+img {border: 0px;
+padding-top: 2px;
+padding-bottom: 2px;
+color: #ffffff}
+	
+ol li
+	{margin-bottom: 3pt}
+	
+caption {
+   text-align: left;
+   color: #000066;
+   font-weight: bold;
+   margin-top: 2pt;
+   margin-bottom: 0.5pt;
+   }
+   
+th {text-align: left;}	
+ 
+ /*/*/ 
+.rule {
+border-bottom-color: #000066;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	padding-top: 0px;
+	padding-bottom: 3px;
+}
+
+.rule h1 {padding-top: 2px;
+		 padding-bottom: 2px;
+		 margin: 0px;}
+.rule hr
+	{display: none;}
+/* End */
+
+ /*/*/ 
+.rulethin {
+border-bottom-color: #000066;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding-top: 0px;
+	padding-bottom: 3px;
+	margin-bottom: 6px;
+}
+
+.rulethin hr
+	{display: none;}
+/* End */
+
+
+.textcenter {
+	text-align: center;
+		}
+	
+.textright {
+	text-align: right;
+		}	
+		
+.textcenter table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	}
+
+ol	
+	{list-style-type: decimal;}
+
+ol ol	
+	{list-style-type: lower-alpha;}
+
+ol ol ol
+	{list-style-type: lower-roman;}
+
+
+	
+
+.maincontent h2 {font-size: 11pt;
+/*/*/font-size: 100%;/* end */
+font-family: verdana, helvetica, sans-serif;
+padding-bottom: 2px;
+padding-top: 4px;
+margin-top: 0px;
+font-weight: bold;}
+
+
+#rightcol .maincontent dt {font-size: 10pt;
+		/*/*/font-size: 95%;/* end */
+		font-weight: bold;
+		padding-bottom: 3px;
+		margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; }
+		
+#rightcol .maincontent dd, #rightcol .maincontent dd ul {padding-top: 0px; margin-top: 0px;}
+
+
+.maincontent ul {
+padding-bottom: 8px;}
+
+
+
+.clearing {clear:both;margin:0; height:0;}
+
+.maincontent {margin: 0px; height: 1%; clear: both;}
+
+
+		/* float hack for IE for mac, which handles floated cells within a table very inconsistently */
+
+		
+	/* hide from IE mac using the backslash filter  \*/
+		div.floatone {width: 48%; display:block; float:left; padding-top: 8px;}
+		div.floattwo {display:block; width: 48%; float:right; padding-top: 8px;}
+/* end (IE mac can see the rest of the styles below) */
+
+
+
+
+		
+#sidenews
+{border-top: 1px;
+border-bottom: 1px;
+border-left: 0px;
+border-right: 0px;
+border-style: dotted;
+padding-top: 4px;
+margin-top: 0px;
+}
+.searchbox { text-align: left; /*/*/text-align: right;/* end */  padding-top: 2px; margin-top: 0px; vertical-align: top;
+font-size: 9pt;
+/*/*/font-size: 80%;/* end */
+}
+
+.searchbox fieldset {display: block; vertical-align: top;
+border: 0px;  padding: 0px; padding-top: 2px; padding-bottom: 2px; margin: 0px; text-align: left; /*/*/text-align: right;/* end */ color: #000000;}
+
+.searchbox img {display: block; /*/*/display: inline;/* end */ text-align: left;}
+#rhinfo #sidenews, #rhinfo #sidenews dd {font-size: 9pt; /*/*/font-size: 92%;/* end */ color: #000066;}
+
+#sidenews dt
+{color: #990000;}
+
+#sidenews dt a:link
+{text-decoration: none;
+color: #990000;}
+#sidenews dt a:visited
+{text-decoration: none;
+color: #990000;}
+
+#sidenews dt a:hover
+{text-decoration: underline;
+color: #990000;}
+
+.maincontent #sidenews li, .maincontent #sidenews dd {font-size: 90%;}
+
+.large {font-size: 11pt; /*/*/ 
+   font-size : 120%;
+   /* End */font-family: palatino,verdana,sans-serif; color: #333366;}
+   
+   div.large  {padding-top: 8px;}
+
+#events h2 {color: #000066;
+font-family: palatino,verdana,sans-serif;
+font-size: 11pt;
+width: 100%;
+margin-top: 0px;
+font-weight: bold;}
+
+#sidenews ul {padding-top: 6px; padding-bottom: 0px; margin: 0px;}
+
+
+.sitename
+	{font-weight: bold;
+	color: #000066;
+	background-color: #ffffff;
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 10pt;
+	padding-bottom: 1px;
+	padding-bottom: 7px;}
+
+.sitename a:link, .sitename a:visited
+	{color: #000066;
+	background-color: #ffffff;
+	font-weight: bold;
+	text-decoration: underline;}
+	
+.hidden {
+	color: #ffffff;
+	display: none;}
+	
+
+.menuhidden {
+	color: #000066;}
+	
+.abullet  {
+   margin-top : 1px;
+   padding-left : 12px;
+   background : #FFFFFF url("http://www.ox.ac.uk/i/abullet.gif") no-repeat;}
+   
+ .abulletspace  {
+   margin-top : 1px;
+   /*/*/ 
+   margin-bottom : 10px;
+   /* End */
+   padding-left : 12px;
+   background : #FFFFFF url("http://www.ox.ac.uk/i/abullet.gif") no-repeat;}
+   
+.downbullet  {
+   margin-top : 1px;
+   padding-left : 12px;
+   background : #FFFFFF url("http://www.ox.ac.uk/i/downbullet.gif") no-repeat;}
+   
+.downbulletspace  {
+   margin-top : 1px;
+   /*/*/ 
+   margin-bottom : 10px;
+   /* End */
+   padding-left : 12px;
+   background : #FFFFFF url("http://www.ox.ac.uk/i/downbullet.gif") no-repeat;}
+   
+.bbullet  {
+   padding-left : 8px;
+   color: #000066;
+   background : #Ffffff url("http://www.ox.ac.uk/i/bbullet.gif") no-repeat;}
+   
+   
+.wordbullet  {
+   margin-top : 1px;
+   padding-left : 18px;
+   background : #FFFFFF url("http://www.ox.ac.uk/i/wordbullet.gif") no-repeat;}
+   
+p.back2top
+	{margin-top : 1px;
+	padding-left : 12px;
+	background : url("http://www.ox.ac.uk/i/upbullet.gif") no-repeat;
+	color: #999999;
+	background-color: #ffffff;
+	/*/*/background-color: transparent;/* end */
+	}
+	
+p.back2top a:link
+	{color: #333366;
+	text-decoration: none;
+	}
+p.back2top a:visited
+	{color: #666666;
+	text-decoration: none;
+	}
+	
+p.back2top a:hover
+	{color: #333366;
+	text-decoration: underline;
+	}
+	
+p.back2top a:visited:hover
+	{color: #333366;
+	text-decoration: underline;
+	}
+.captionleft
+ { 	color: #666699;
+ 	font-size: 9pt;
+ 	padding-bottom: 3px;
+ 	/*/*/font-size: 80%;
+ 	float: left;
+ 	padding-right: 10px;
+ 	width: 250px;/* End */
+ 	}   
+ 	
+.captionleft200
+ { 	color: #666699;
+ 	font-size: 9pt;
+ 	padding-bottom: 3px;
+ 	/*/*/font-size: 80%;
+ 	float: left;
+ 	padding-right: 10px;
+ 	width: 200px;/* End */
+ 	}   
+
+.captionright
+ {	color: #666699;
+ 	font-size: 9pt;
+ 	padding-bottom: 2px;
+ 	/*/*/font-size: 80%;
+ 	float: right;
+ 	padding-left: 5px;
+ 	width: 200px;/* End */
+ 	}
+ 	
+.captionright250
+ { 	color: #666699;
+ 	font-size: 9pt;
+ 	padding-bottom: 3px;
+ 	/*/*/font-size: 80%;
+ 	float: right;
+ 	padding-left: 5px;
+ 	width: 250px;/* End */
+ 	}
+ .captionright150
+ { 	color: #666699;
+ 	font-size: 9pt;
+ 	padding-bottom: 3px;
+ 	/*/*/font-size: 80%;
+ 	float: right;
+ 	padding-left: 5px;
+ 	width: 150px;/* End */
+ 	}
+
+ 
+ /*/*/ .floatright {float: right;
+ 	padding-left: 5px;}
+/* End */
+
+/*/*/.floatleft {float: left;
+	padding-right: 5px;}
+/* End */
+
+
+
+.footnote {
+	color: #333333;
+	font-size: 9pt;
+	font-family: verdana, helvetica, arial, sans-serif;
+		}
+
+.news {
+	font-size: 8.5pt;
+	font-family: verdana, helvetica, arial, sans-serif;
+		}
+.news table {
+	border: 1px;
+	border-color: #000033;
+	}
+		
+.news th {
+	font-size: 9pt;
+	color: #ffffff;
+	background-color: #000033
+		}
+.news td {
+	font-size: 8.5pt;
+	color: #000033;
+		}
+.topspace {padding-top: 5px;}		
+.vab {vertical-align: bottom;}
+		
+.width10
+	{width: 10%;}
+.width20
+	{width: 20%;}
+.width30
+	{width: 30%;}
+.width40
+	{width: 40%;}
+.width50
+	{width: 50%;}
+.width60
+	{width: 60%;}
+.width70
+	{width: 70%;}
+.width80
+	{width: 80%;}
+.width90
+	{width: 90%;}
+.width100
+	{width: 100%;}
+
+		
+.shadedbox
+	{
+	background-color: #Ffffcc;
+	}
+
+.shadedboxbullet  {
+   padding-left : 8px;
+   color: #000066;
+   background : #Ffffcc url("http://www.ox.ac.uk/i/cbullet.gif") no-repeat;}
+   
+.bbulletshade  {
+   padding-left : 8px;
+   color: #000000;
+   background : #ffcccc url("http://www.ox.ac.uk/i/bbullet.gif") no-repeat;}
+   
+
+	
+#leftcol
+	{color: #ffffff;
+	background-color: #000066;
+
+}
+
+#leftcol dl /*/*/{padding-bottom: 12px;}/* End */
+
+#leftcol dt {
+	font-weight: bold; color: #ffffff;
+	font-size: 10pt;
+	/*/*/font-size: 100%;
+	border-bottom-color: #ccccff;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	padding-bottom: 3px;/* End */
+	}
+
+#leftcol dd {margin-left: -20px;
+	/*/*/margin: 0px;/* End */}
+	
+#leftcol ul 
+	{margin-left: -20px;
+	/*/*/margin: 0px;
+	padding-left: 0em;/* End */
+	margin-top: 0px;
+	margin-bottom: 0px;}
+
+#style2 li 
+	{list-style-type: disc;
+	/*/*/list-style-type: none;/* End */
+	font-size: 9pt;
+	/*/*/font-size: 90%;/* End */
+	padding-top: 4px;
+	border-bottom-color: #ccccff;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	padding-bottom: 4px;
+				}
+#layout
+	
+	{
+	border-collapse: collapse;
+	/*/*/padding-left: 6px;/* End */
+}
+
+#rightcol
+	
+	{
+	/*/*/padding-left: 10px;/* End */
+}
+	
+.collapse
+	
+	{
+	border-collapse: collapse;
+	/*/*/padding-left: 0px;/* End */
+	}
+
+
+	
+#leftcol img
+	{border: none;
+	color: #000066;
+	}
+	
+#leftcol a img
+	{color: #000066;
+	}
+	
+#leftcol hr
+	{color: #ffcc00;
+	height: 1px;}
+
+#leftcol a:link
+	{text-decoration: none;
+	color: #ffffff;
+	background-color: #000066;
+	font-weight: bold;}
+	
+#leftcol a:visited
+	{text-decoration: none;
+	color: #ccccff;
+	background-color: #000066;
+	font-weight: bold;}
+
+#leftcol a:active
+	{text-decoration: none;
+	color: #ffcc00;}
+	
+#leftcol .hidden
+	{color: #000066;}
+	
+	
+#leftcol a:hover
+	{text-decoration: none;
+	color: #ffcc00;}
+	
+/*/*/#lhnavbar {
+margin-top: 0px;
+	width: 150px;
+	padding: 0 0 0 0;
+	margin-bottom: 4px;
+	background-color: #000066;
+	}
+	/* End */
+	
+
+#lhnavbar ul {
+		margin-left: -20px;
+		background-color: #000066;
+		list-style-type: disc;
+		/*/*/
+		list-style-type: none;
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		border: none;/* End */
+		}
+		
+#lhnavbar li {
+font-size: 9pt;
+
+	/*/*/font-size: 85%;
+		padding: 0px 0px 0px 0px;
+		font-weight: bold;
+		display: block;
+		width: 100%;
+		line-height: 14px;
+		background-color: #000066;
+		margin: 0px; 
+		/* End */
+	}
+	
+#lhnavbar li a {
+		display: block;
+				padding: 3px 0px 3px 0px;
+		background-color: #000066;
+		color: #fff;
+		text-decoration: none;
+		width: 100%;
+		
+		}
+		
+html>body #lhnavbar li a {
+		width: auto;
+		}
+html>body #lhnavbar li .here {
+		width: auto;
+		}
+		#lhnavbar li span.here {
+		background-color: #333399;
+		color: #ffffff;
+		text-decoration: none;
+		padding-top: 3px;
+			padding-bottom: 3px;
+			display: block;
+		width: 100%;
+		}
+		
+#lhnavbar li a:hover {
+		background-color: #ccccff;
+		color: #000066;
+		text-decoration: none;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		}
+
+
+#lhnavbar li a:visited.lhlink {
+		background-color: #333399;
+		color: #ffffff;
+		text-decoration: none;
+		padding-top: 3px;
+			padding-bottom: 3px;
+		}
+#lhnavbar li a:link.lhlink {
+		background-color: #333399;
+		color: #ffffff;
+		text-decoration: none;
+		padding-top: 3px;
+			padding-bottom: 3px;
+		}
+#lhnavbar li a:hover.lhlink {
+		background-color: #ccccff;
+		color: #000066;
+		text-decoration: none;
+		padding-top: 3px;
+			padding-bottom: 3px;
+		}
+
+	
+#rightcol
+	{width: 90%;
+	padding-left: 20px;
+		}
+	
+#rightcol ul, #rightcol dd { 
+list-style-position: outside;
+	margin-left: -20px;
+	/*/*/margin-left: 1.5em;/* End */
+		padding-left: 0;
+		}
+		
+#rightcol ul li
+	{
+	list-style-image: url(http://www.ox.ac.uk/i/abullet.gif);
+	margin-bottom: 3px;}
+	
+#rightcol ul ul li
+	{
+	list-style-image: url(http://www.ox.ac.uk/i/bbullet.gif);
+	margin-bottom: 3px;}
+
+
+#rightcol li.down
+	{list-style-image: url(http://www.ox.ac.uk/i/downbullet.gif);
+	margin-bottom: 3px;
+	}
+	
+/*/*/#rightcol dl {padding-bottom: 12px;}	/* End */
+
+#rightcol dt {
+	font-weight: bold;
+	color: #000066;
+	/*/*/font-size: 110%;/* End */
+	padding-bottom: 3px;
+	margin-bottom: 0px;
+	}
+
+#rightcol dd {margin-left: -20px;
+	/*/*/margin: 0px;/*/*/}
+	
+
+	
+#rightcol dt.Q
+	{ 
+	margin-top : 1px;
+	padding-left : 16px;
+   	background : #FFFFFF url("http://www.ox.ac.uk/i/aboutoxford/Q.gif") no-repeat;
+	margin-bottom: 3px;
+	font-weight:  normal;
+	}
+#rightcol dd.A
+	{
+   margin-top : 1px;
+   padding-left : 16px;
+   background : #FFFFFF url("http://www.ox.ac.uk/i/aboutoxford/A.gif") no-repeat;
+   margin-bottom: 12px;}
+	
+#rightcol dd.A strong
+	{font-weight: normal;
+	color: #990000;
+	}
+
+#rightcol a:link
+	{color: #0000ff;}
+	
+#rightcol a:visited
+	{color: #663366;}
+
+#rightcol a:active
+	{color: #990000;}
+	
+#rightcol a:hover
+	{color: #990000;}
+
+	
+#rhinfo
+	{width: 25%;
+	background-color: #ffffff;
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 10pt;
+	/*/*font-size: 90%;
+/* End */
+padding-left: 1em;
+	}
+	
+#rhinfo dt
+	{font-size: 10pt;
+	/*/*/font-size: 95%;
+/* End */
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-weight: bold;
+	color: #990000;
+	padding-bottom: 3px;}
+	
+
+#rhinfo dd {margin-left: -20px;
+	/*/*/margin-left: 0px;/* End */}
+	
+#rhinfo ul { 
+list-style-position: outside;
+	margin-left: -20px;
+	/*/*/margin-left: 1em;/* End */
+		padding-left: 8px;}
+
+#rhinfo li
+	{
+	margin-bottom: 2px;
+	list-style-image: url(http://www.ox.ac.uk/i/bbullet.gif);
+	padding-left: 0px;
+	
+	}
+
+#rhinfo a:link, .rhinfo a:visited
+	{color: #000066;
+	text-decoration: underline;
+	}
+	
+#rhinfo a:hover 
+	{color: #660000;
+	text-decoration: underline;
+	}
+	
+#rhinfo p
+	{color: #000000;
+	font-family: verdana, helvetica, arial, sans-serif;
+	}
+
+	
+#rhinfo h2
+	{font-size: 10pt;
+	/*/*/font-size: 100%;
+/* End */
+	font-family: verdana, helvetica, arial, sans-serif;
+	color: #990000;
+	font-weight: bold;}
+	
+#rhinfo h2 a:link
+	{font-family: verdana, helvetica, arial, sans-serif;
+	color: #990000;
+	text-decoration: underline;}
+	
+#rhinfo h4
+	{font-size: 10pt;
+	/*/*/font-size: 90%;
+/* End */
+	font-family: verdana, helvetica, arial, sans-serif;
+	color: #990000;}
+	
+#rhinfo h4 a:link
+	{font-family: verdana, helvetica, arial, sans-serif;
+	color: #990000;
+	text-decoration: underline;}
+#rhinfo dt {padding-top: 5px;}
+
+#rhinfo em 
+{font-style: normal;
+color: #990000;}
+
+#rhinfo dd, #rhinfo dd ul {padding-top: 0px; margin-top: 0px;}
+#rhinfo ul li {	list-style-image: url(http://www.ox.ac.uk/i/sidebullet.gif);
+	margin-bottom: 3px;}
+/*/*/ #rhinfo .floatbox dd, #rhinfo .floatbox ul {padding-bottom: 0px; margin-bottom: 0px;}/* end */
+
+.nobox {border: 0px; padding:0; margin: 0px;}
+.nobox fieldset {display: block; vertical-align: top;
+border: 0px;}
+
+html>body .nobox legend {display: none; text-align: left;  vertical-align: top;}
+/*/*/ 
+.box {
+	
+	padding: 5px;
+	margin-top: 0px;
+	color: #000033;
+	font-family: verdana, helvetica, arial, sans-serif;
+	border-color: #9999cc;
+	border-width: 1px;
+	border-style: solid;
+}/* End */ 
+#newsevents dl {clear: both;}
+#newsevents img {align: left;
+/*/*/float: left;/* End */ padding-right: 3px;}
+#newsevents dd  {margin-left: 2px;
+padding-left: 0;
+/*/*/ padding-bottom: 0px;	/* End */ 
+}
+
+
+.boxtop {
+	
+	padding: 5px;
+	margin-top: 0px;
+	background-color: #eeeeee;
+	color: #000033;
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 1.1em;
+	border-color: #9999cc;
+	border-width: 1px;
+	border-style: solid;
+}/* End */ 
+#newsevents dl {clear: both;}
+#newsevents img {align: left;
+/*/*/float: left;/* End */ padding-right: 3px;}
+#newsevents dd  {margin-left: 2px;
+padding-left: 0;
+/*/*/ padding-bottom: 0px;	/* End */ 
+}
+
+
+
+
+#newsevents dt  {color: #990000;
+font-weight: bold;
+padding-bottom: 0px;
+padding-top: 0px;
+font-size: 10pt;
+/*/*/font-size: 100%/* End */ }
+
+#newsevents dt a:link
+	{
+	font-weight: bold;
+	color: #990000;
+	text-decoration: none;
+
+	}
+
+
+	
+#newsevents dt a:hover
+	{
+	color: #990000;
+	text-decoration: underline;
+
+	}
+
+#newsevents dt a:visited 
+	{
+	color: #990000;
+	text-decoration: none;
+
+	}
+#newsevents dt a:visited:hover
+	{
+	color: #990000;
+	text-decoration: underline;
+
+	}
+
+
+.modified {clear: both; color: #808080;}
+	
+#events dt {font-weight: bold;
+	color: #000033;}
+ 
+
+#events dd {color: #000033;
+	padding-bottom: 10px;}
+	
+
+	
+#localnav
+	{font-weight: bold;}
+
+#footernav
+	{font-weight: bold;}
+
+
+#footer/i
+	{font-size: 9pt;
+	/*/*/font-size: 85%;/* end */
+	color: #666699;
+	background-color: #ffffff;}
+	
+#footer .back2top a:link
+	{color: #333366;
+	text-decoration: none;
+	}
+#footer .back2top a:visited
+	{color: #666666;
+	text-decoration: none;
+	}
+	
+#footer .back2top a:hover
+	{color: #333366;
+	text-decoration: underline;
+	}
+	
+#footer .back2top a:visited:hover
+	{color: #333366;
+	text-decoration: underline;
+	}
+
+.clear {clear: both;}
+.clearleft {clear: left;}
+.clearright {clear: right;}
+.mediabanner th 
+	{color: #000066; background-color: #ffffff;
+	font-weight: bold;}
+
+.mediabanner tr
+	{height: 100%;
+	width: 100%;
+	background-color: #99cccc;
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #003333;
+	}
+		
+.mediabanner a
+	{text-decoration: none; color: #003333;}
+	
+.mediabanner a:hover
+	{text-decoration: underline; color: #003333;}
+	
+	
+table.collegetable {
+width: 100%;
+background-color: #dddddd; 
+border: 1px solid #000000;
+}
+
+
+table.collegetable td {vertical-align: top; border-right: 1px solid #000000;}
+
+table.collegetable td.lightcol
+	{background-color: #eeeeee;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+
+
+table.collegetable a
+	{text-decoration: none;}
+
+table.collegetable a:hover
+	{text-decoration: underline;}
+
+table.collegetable th 
+	{background-color: #006633;
+	/*/*/background-color: #660000;
+	color: #ffffff;/* End */
+	border-color: #660000;
+	border-width: 1px;
+	padding-right: 1.0em;}
+	
+
+.photocaption
+	{color: #666699;
+	font-size: 9pt;
+	/*/*/font-size: 80%;/* End */}
+	
+	
+.highlight
+{/*/*/ 
+	padding-left: 5px;
+	padding-top: 6px;
+	padding-bottom: 3px;
+	background-color: #ccccff;/* End */ 
+	color: #000033;
+	margin-bottom: 8px;
+	border-top: 1px;
+	border-bottom: 1px;
+	border-left: 1px;
+	border-right: 1px;
+	border-style: dotted;
+	clear: both;
+	}	
+	
+.highlight form {padding: 0px; margin: 0px;}
+	
+.highlight li {
+	margin-bottom: 2px;
+	list-style-image: url('http://www.ox.ac.uk/i/altbullet3.gif');
+	padding-left: 0px;
+	
+	}
+	
+.highlight dt a:link, .highlight dt a:visited, .highlight dt a:hover {font-size: 10pt;
+/*/*/font-size: 95%;/* end */}
+
+.highlight table tr {padding: 3px;}
+
+table.datatable {
+background-color: #eeeeee;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #999999;}
+
+.darkcell td
+	{background-color: #ccccff;
+}
+
+.datatable td
+	{
+	border-width: 1px;
+	border-color: #aaa;
+	
+	border-style: solid;
+	}
+
+table.datatable th 
+	{
+	background-color: #9999CC;
+	color: #000066;
+	border-color: #aaa;
+	border-style: solid;
+	border-width: 1px;}
+
+/*/*/#rightcol .floatbox dt.green {background-color: #CCFFCC;
+color: #333333;}
+#rightcol .floatbox dt.blue {background-color: #CCCCFF; color: #333333;}
+#rightcol .floatbox .yellow {background-color: #FFFFCC; color: #333333;}
+#rightcol .floatbox dt.red {background-color: #FFCCCC; color: #333333;}
+#rightcol .floatbox dt.darkblue {background-color: #9999CC; color: #333333;}
+#rightcol .floatbox dt.darkweakblue {background-color: #FFCCCC; color: #333333;}
+#rightcol .floatbox dd {padding-top: 5px; margin-top: 0px; padding-bottom: 5px; margin-bottom: 2px;}
+#rightcol .floatbox dd ul {padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;}
+
+
+
+.floatbox {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 3px;
+	border-width: 1px;
+	border-color: #808080;
+	border-style: solid;}
+	
+
+	
+
+#rhinfo .floatbox dd.vc {background-color: #FFCCCC; border-bottom: 1px; border-top: 0px; border-left: 0px; border-right: 0px; border-style: solid; border-color: #808080; padding-left: 8px;}
+
+#rhinfo .floatbox ul {padding-bottom: 0px;
+						margin-bottom: 0px;}
+												
+#rhinfo .floatbox li {padding-bottom: 0px;
+						margin-bottom: 0px;}
+						
+#rhinfo .floatbox h2 {padding-top: 0px; margin-top: 0px; font-weight: bold;}
+
+#news img {align: left;}
+		
+#rightcol .floatbox dt {font-size: 100%; border-top: 0px; border-bottom: 1px; border-left: 0px; border-right: 0px;
+border-style: solid;
+border-color: #808080;}
+
+#rightcol .floatbox dt a:link, #rightcol .floatbox dt a:visited {color: #333333;
+	text-decoration: none;}
+	
+#rightcol .floatbox dt a:hover {color: #333333;
+	text-decoration: underline;}
+
+
+#rightcol .floatbox dt {
+	font-weight: bold;
+	padding-top: 4px;
+	padding-left: 8px;
+	padding-bottom: 4px;
+}
+
+#rightcol .floatbox dd {padding-top: 4px;
+		padding-bottom: 0px;
+		padding-left: 8px;
+		padding-right: 8px;
+}
+
+.floatbox dd {padding-top: 4px;
+		padding-bottom: 0px;
+		padding-left: 8px;
+		padding-right: 8px;
+}
+/* end */
+#rightcol .maincontent ul {
+	
+		padding-bottom: 0px;
+		 margin-bottom: 10px;
+		
+}
+
+table.money {display: block; width: 65%; background-color: #ccffff; margin-bottom: 10px; padding: 10px; }
+table.money caption.inc {display: block; background-color: #ccffcc; border-bottom: 1px solid #000066; }
+table.money caption.exp {display: block; background-color: #ffcccc; border-bottom: 1px solid #000066; }
+
+.tincbox {display: none;  /*/*/ display: table-row;   /* end */}
+
+.buttonhide { /*/*/ display: none; /* end */}
+
+table.moneyres {display: none;  /*/*/ display: block; width: 65%; background-color: #00ffcc; padding: 5px;  /* end */ }
+table.moneyres caption.tot {display: none;  /*/*/ display: block; background-color: #ffffcc; border-bottom: 1px solid #000066; /* end */}
+
+.closewindow {text-decoration: none;}
+.closewindow:hover {text-decoration: underline;}
+
+.smallertext {font-size: 85%;}
+
+.colnos td, th {border: 1px solid #dadce3;}
+.colnos th {background-color: #dadce3;}
+.colnostotal {background-color:#2d4b7c; color: #ffffff;}
+.colnostotal th {background-color:#2d4b7c; color: #ffffff;}
+.colnos a {text-decoration: none; }
+.shadycell {background-color: #ebedf4;}
+
+p.error
+{
+  font-weight: bold;
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+  padding: 2px;
+}
+
+p.warning
+{
+  font-weight: bold;
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: yellow;
+  padding: 2px;
+}
+
+p.info
+{
+  font-weight: bold;
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: green;
+  padding: 2px;
+}
+
+
